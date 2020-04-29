@@ -101,7 +101,7 @@ def closest(data, zipcode):
 The ***closest*** method returns the calculation with the shortest distance of the spot that has stocking fish (return dl_sorted[i]) <br>
 
 #### Step 3: Take the valid input, print out the result. ####
-Only take the valid zipcode (existing place in New York state), print out the final result:<br>
+Only take the valid zipcode (exist in New York state), print out the final result:<br>
 - Waterbody name
 - Number of trout that have ever been released in this spot
 - Latitude-longtitude of the spot
