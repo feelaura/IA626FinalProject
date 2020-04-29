@@ -98,7 +98,7 @@ def closest(data, zipcode):
 
     return dl_sorted[i]
 ```
-The closest method returns the calculation with the shortest distance of the spot that has stocking fish (return dl_sorted[i]) <br>
+The ***closest*** method returns the calculation with the shortest distance of the spot that has stocking fish (return dl_sorted[i]) <br>
 
 #### Step 3: Take the valid input, print out the result. ####
 Only take the valid zipcode (existing place in New York state), print out the final result:<br>
