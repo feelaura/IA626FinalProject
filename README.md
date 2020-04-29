@@ -5,9 +5,9 @@ Each year DEC releases approximately 900,000 pounds of fish into more than 1,200
 The idea is to combine the number of stocking trout in different area and the access locations of rivers and streams for fishing in New York State, then find the nearest location to the input zipcode. This location should be accessed by public and have stocking trout, which gives the fisherman less chance to get skunked.<br>
 
 ## Data Sources: ##
-1. Recommended Fishing Rivers And Streams - I got my data from https://data.ny.gov/Recreation/Recommended-Fishing-Rivers-And-Streams/jcxg-7gnm<br>
-2. Fish Stocking Lists (Actual): Beginning 2011 - I got my data from https://data.ny.gov/Recreation/Fish-Stocking-Lists-Actual-Beginning-2011/e52k-ymww<br>
-3. Zipcodes - This dataset is the most recent one I found: https://www.aggdata.com/free/united-states-zip-codes<br>
+1. Recommended Fishing Rivers And Streams - I got my data from [data.ny.gov](https://data.ny.gov/Recreation/Recommended-Fishing-Rivers-And-Streams/jcxg-7gnm)<br>
+2. Fish Stocking Lists (Actual): Beginning 2011 - I got my data from [data.ny.gov](https://data.ny.gov/Recreation/Fish-Stocking-Lists-Actual-Beginning-2011/e52k-ymww)<br>
+3. Zipcodes - This dataset is the most recent one I found: [AggData.com](https://www.aggdata.com/free/united-states-zip-codes)<br>
 
 ### Flow Chart ###
 ![Flow Chart](images/flowchart.png)
@@ -148,7 +148,7 @@ Based on the script, the nearest fishing spot to ***12019*** is: Kayaderosseras 
 
 Let's validate the model by plotting in Google Maps:<br>
 ![example](images/distancegooglemaps.png)<br>
-- The black line indicates the distance of ***7.42*** mile from ***12019*** to the fishing spot, which is close to ***7.40*** mile!<br>
+- The black line indicates the distance of ***7.42*** miles from ***12019*** to the fishing spot, which is close to ***7.40*** miles!<br>
 - Note that the formula doesn't consider the actual roads in the location. Haversine simply calculates the distance from point A to point B.<br>
 
 
