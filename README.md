@@ -54,8 +54,8 @@ def getRecord(zipcode):
     df = df_zipcodes.loc[df_zipcodes['Zip Code']==int(zipcode)]
     return df
 
-def getFishingSpots(specy):
-    df = df_fishing_spots[df_fishing_spots['Fish Species Present at Waterbody'].str.contains(specy)]
+def getFishingSpots(species):
+    df = df_fishing_spots[df_fishing_spots['Fish Species Present at Waterbody'].str.contains(species)]
     return df.to_dict('records')
 ```
 
