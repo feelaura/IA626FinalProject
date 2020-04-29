@@ -102,7 +102,10 @@ The ***closest*** method returns the calculation with the shortest distance of t
 
 #### Step 3: Take the valid input, print out the result. ####
 Only take the valid zipcode (existing place in New York state), print out the final result:<br>
-Waterbody name, the number of trout that have ever been released in this spot, the latitude-longtitude of the spot and the distance.<br>
+	- Waterbody name
+	- Number of trout that have ever been released in this spot
+	- Latitude-longtitude of the spot
+	- Distance
 ```python
 print('**********************************************************')
 print('*               Trout fishing navigator                  *')
