@@ -20,7 +20,7 @@ from math import cos, asin, sqrt
 ```
 I mainly use pandas to clean and filter our data sources. The math package is used for the actual calculation. <br>
 
-# Step 1: Clean Data Sources #
+### Step 1: Clean Data Sources ###
 For data cleaning, I used pandas to do the following:<br>
 
 - Create three dataframes, one for each data source<br>
@@ -58,8 +58,8 @@ def getFishingSpots(specy):
     return df.to_dict('records')
 ```
 
-# Step 2: Calculate the nearest fishing spot by Zipcode #
-The Haversine (https://stackoverflow.com/questions/41336756/find-the-closest-latitude-and-longitude) formula is one way of calculating the distance between two points: the latitude-longtitude of the zipcode and fishing spot.<br>
+### Step 2: Calculate the nearest fishing spot by Zipcode ###
+The [Haversine](https://stackoverflow.com/questions/41336756/find-the-closest-latitude-and-longitude) formula is one way of calculating the distance between two points: the latitude-longtitude of the zipcode and fishing spot.<br>
 ```python
 def distance(lat1, lon1, lat2, lon2):
     p = 0.017453292519943295  #Pi/180
@@ -99,7 +99,7 @@ def closest(data, zipcode):
 ```
 The closest method returns the calculation with the shortest distance of the spot that has stocking fish (return dl_sorted[i]) <br>
 
-# Step 3: Take the valid input, print out the result. #
+### Step 3: Take the valid input, print out the result. ###
 Only take the valid zipcode (existing place in New York state), print out the final result:<br>
 Waterbody name, the number of trout that have ever been released in this spot, the latitude-longtitude of the spot and the distance.<br>
 ```python
