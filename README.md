@@ -147,7 +147,7 @@ Based on the script, the nearest fishing spot to 12019 is: Kayaderosseras Creek,
 
 Let's validate the model by plotting in Google Maps:<br>
 ![example](images/distance_googlemaps.png)
-The black line indicates the distance of 7.41 mile from 12019 to the fishing spot, which is close to 7.40 mile!<br>
+The black line indicates the distance of 7.42 mile from 12019 to the fishing spot, which is close to 7.40 mile!<br>
 Note that the formula doesn't consider the actual roads in the location. Haversine simply calculates the distance from point A to point B.<br>
 
 
