@@ -2,7 +2,7 @@
 
 Each year DEC releases approximately 900,000 pounds of fish into more than 1,200 public streams, rivers, lakes and ponds across the state. When someone is planning a trip for trout fishing, it would be really helpful to know the exact location to go by inputting a zipcode.<br>
 
-The idea is to combine the number of stocking trout in different area and the access locations of rivers and streams for fishing in New York State, then find the nearest location to the input zipcode. This location should be accessed by public and have stocking trout, which gives the fisherman less chance to get skunked.<br>
+The idea is to combine the number of stocking trout in different area and the access locations of rivers and streams for fishing in New York State, then find the nearest location to the given zipcode. This location should be accessed by public and have stocking trout, which gives the fisherman less chance to get skunked.<br>
 
 ## Data Sources: ##
 1. Recommended Fishing Rivers And Streams - I got my data from [data.ny.gov](https://data.ny.gov/Recreation/Recommended-Fishing-Rivers-And-Streams/jcxg-7gnm)<br>
@@ -68,7 +68,7 @@ def distance(lat1, lon1, lat2, lon2):
     return 12742 * asin(sqrt(a)) #2*R*asin..
 ```
 
-For the input zipcode, the script will calculate its distance to all recommented fishing spots in the NYS. To get the nearest fishing spot with stocked trout, here's the method:<br>
+For the given zipcode, the script will calculate its distance to all recommented fishing spots in the NYS. To get the nearest fishing spot with stocked trout, here's the method:<br>
 ```python
 def closest(data, zipcode):
     dl = []
