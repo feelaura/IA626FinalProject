@@ -4,14 +4,14 @@ Each year DEC releases approximately 900,000 pounds of fish into more than 1,200
 
 The idea is to combine the number of stocking trout in different area and the access locations of rivers and streams for fishing in New York State, then find the nearest location to the input zipcode. This location should be accessed by public and have stocking trout, which gives the fisherman less chance to get skunked.<br>
 
-### Data Sources: ###
+## Data Sources: ##
 1. Recommended Fishing Rivers And Streams - I got my data from https://data.ny.gov/Recreation/Recommended-Fishing-Rivers-And-Streams/jcxg-7gnm<br>
 2. Fish Stocking Lists (Actual): Beginning 2011 - I got my data from https://data.ny.gov/Recreation/Fish-Stocking-Lists-Actual-Beginning-2011/e52k-ymww<br>
 3. Zipcodes - This dataset is the most recent one I found: https://www.aggdata.com/free/united-states-zip-codes<br>
 
 ![Flow Chart](images/flowchart.png)
 
-Process:<br>
+## Process: ##
 
 Required Python Packages<br>
 ```python
@@ -20,7 +20,7 @@ from math import cos, asin, sqrt
 ```
 I mainly use pandas to clean and filter our data sources. The math package is used for the actual calculation. <br>
 
-Step 1: Clean Data Sources<br>
+# Step 1: Clean Data Sources #
 For data cleaning, I used pandas to do the following:<br>
 
 - Create three dataframes, one for each data source<br>
@@ -58,7 +58,7 @@ def getFishingSpots(specy):
     return df.to_dict('records')
 ```
 
-Step 2: Calculate the nearest fishing spot by Zipcode<br>
+# Step 2: Calculate the nearest fishing spot by Zipcode #
 The Haversine (https://stackoverflow.com/questions/41336756/find-the-closest-latitude-and-longitude) formula is one way of calculating the distance between two points: the latitude-longtitude of the zipcode and fishing spot.<br>
 ```python
 def distance(lat1, lon1, lat2, lon2):
@@ -99,7 +99,7 @@ def closest(data, zipcode):
 ```
 The closest method returns the calculation with the shortest distance of the spot that has stocking fish (return dl_sorted[i]) <br>
 
-Step 3: Take the valid input, print out the result.<br>
+# Step 3: Take the valid input, print out the result. #
 Only take the valid zipcode (existing place in New York state), print out the final result:<br>
 Waterbody name, the number of trout that have ever been released in this spot, the latitude-longtitude of the spot and the distance.<br>
 ```python
@@ -129,7 +129,7 @@ print('Location: %2.9f %2.9f' % (fishingSpot['latitude-fish'], fishingSpot['long
 print('Distance: %8.2f miles' % (fishingSpot['distance']*0.621371)) # converted from km to mile
 ```
 
-Example:<br>
+## Example: ##
 Now, let's find a fishing spot to zipcode 12019.<br>
 ```python
 **********************************************************
@@ -147,7 +147,7 @@ Based on the script, the nearest fishing spot to 12019 is: Kayaderosseras Creek,
 
 Let's validate the model by plotting in Google Maps:<br>
 ![example](images/distancegooglemaps.png)<br>
-The black line indicates the distance of 7.42 mile from 12019 to the fishing spot, which is close to 7.40 mile!<br>
-Note that the formula doesn't consider the actual roads in the location. Haversine simply calculates the distance from point A to point B.<br>
+- The black line indicates the distance of 7.42 mile from 12019 to the fishing spot, which is close to 7.40 mile!<br>
+- Note that the formula doesn't consider the actual roads in the location. Haversine simply calculates the distance from point A to point B.<br>
 
 
