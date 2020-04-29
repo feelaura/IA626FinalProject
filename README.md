@@ -131,7 +131,7 @@ print('Distance: %8.2f miles' % (fishingSpot['distance']*0.621371)) # converted 
 
 Example:<br>
 Now, let's find a fishing spot to zipcode 12019.<br>
-
+```python
 **********************************************************
 *               Trout fishing navigator                  *
 **********************************************************
@@ -142,7 +142,7 @@ Waterbody Name: Kayaderosseras Creek
 Trout stocked:    77960
 Location: 43.026143257 -73.864757704
 Distance:     7.40 miles
-
+```
 Based on the script, the nearest fishing spot to 12019 is: Kayaderosseras Creek, it's 7.40 miles from 12019.<br>
 
 Let's validate the model by plotting in Google Maps:<br>
