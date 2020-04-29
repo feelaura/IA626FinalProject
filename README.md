@@ -1,10 +1,10 @@
-# NYS Trout Fishing Navigator:<br>
+# NYS Trout Fishing Navigator:#
 
 Each year DEC releases approximately 900,000 pounds of fish into more than 1,200 public streams, rivers, lakes and ponds across the state. When someone is planning a trip for trout fishing, it would be really helpful to know the exact location to go by inputting a zipcode.<br>
 
 The idea is to combine the number of stocking trout in different area and the access locations of rivers and streams for fishing in New York State, then find the nearest location to the input zipcode. This location should be accessed by public and have stocking trout, which gives the fisherman less chance to get skunked.<br>
 
-Data Sources:<br>
+###Data Sources:###
 1. Recommended Fishing Rivers And Streams - I got my data from https://data.ny.gov/Recreation/Recommended-Fishing-Rivers-And-Streams/jcxg-7gnm<br>
 2. Fish Stocking Lists (Actual): Beginning 2011 - I got my data from https://data.ny.gov/Recreation/Fish-Stocking-Lists-Actual-Beginning-2011/e52k-ymww<br>
 3. Zipcodes - This dataset is the most recent one I found: https://www.aggdata.com/free/united-states-zip-codes<br>
@@ -23,9 +23,9 @@ I mainly use pandas to clean and filter our data sources. The math package is us
 Step 1: Clean Data Sources<br>
 For data cleaning, I used pandas to do the following:<br>
 
-Create three dataframes, one for each data source<br>
-Remove unnecessary columns<br>
-Only include trout in stocked fish dataframe, group the total amount of each waterbody, assigned the calculated result to another dataframe<br>
+- Create three dataframes, one for each data source<br>
+- Remove unnecessary columns<br>
+- Only include trout in stocked fish dataframe, group the total amount of each waterbody, assigned the calculated result to another dataframe<br>
 ```python
 # -------------------------------------------------------
 # ---------------- Inputs: Dataframes -------------------
