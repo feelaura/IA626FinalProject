@@ -1,13 +1,13 @@
 # NYS Trout Fishing Navigator: #
 
-Each year DEC releases approximately 900,000 pounds of fish into more than 1,200 public streams, rivers, lakes and ponds across the state. When someone is planning a trip for trout fishing, it would be really helpful to know the exact location to go by inputting a zipcode.<br>
+Each year DEC releases approximately 900,000 pounds of fish into more than 1,200 public streams, rivers, lakes and ponds across the state. When people are planning the trip for trout fishing, it would be good to know a better place to go by entering a zipcode.<br>
 
-The idea is to combine the number of stocking trout in different area and the access locations of rivers and streams for fishing in New York State, then find the nearest location to the given zipcode. This location should be accessed by public and have stocking trout, which gives the fisherman less chance to get skunked.<br>
+The idea is to combine the database for the number of stocking trout in different area and the database for the fishing access locations of rivers and streams in New York State and get the nearest good fishing spot per the giving zipcode. These identified locations will have public access and good trout fish stock at the same time, which gives the fisherman better chances to get more catch.<br>
 
 ## Data Sources: ##
-1. Recommended Fishing Rivers And Streams - I got my data from [data.ny.gov](https://data.ny.gov/Recreation/Recommended-Fishing-Rivers-And-Streams/jcxg-7gnm)<br>
-2. Fish Stocking Lists (Actual): Beginning 2011 - I got my data from [data.ny.gov](https://data.ny.gov/Recreation/Fish-Stocking-Lists-Actual-Beginning-2011/e52k-ymww)<br>
-3. Zipcodes - This dataset is the most recent one I found: [AggData.com](https://www.aggdata.com/free/united-states-zip-codes)<br>
+1. Recommended Fishing Rivers And Streams - I got the data from [data.ny.gov](https://data.ny.gov/Recreation/Recommended-Fishing-Rivers-And-Streams/jcxg-7gnm)<br>
+2. Fish Stocking Lists (Actual): Beginning 2011 - I got the data from [data.ny.gov](https://data.ny.gov/Recreation/Fish-Stocking-Lists-Actual-Beginning-2011/e52k-ymww)<br>
+3. Zipcodes - This dataset is the most updated one I found: [AggData.com](https://www.aggdata.com/free/united-states-zip-codes)<br>
 
 ### Flow Chart ###
 ![Flow Chart](images/flowchart.png)
